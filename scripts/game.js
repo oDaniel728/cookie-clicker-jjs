@@ -255,12 +255,13 @@ function AutoClicker()
 {
     if (Session.autoClickerUpgrade == 0) {
         setTimeout(AutoClicker, 100);
+    } else {
+        let interval = getAutoClickerInterval();
+    
+        cookieClicked(null);
+    
+        setTimeout(AutoClicker, interval);
     }
-    let interval = getAutoClickerInterval();
-
-    cookieClicked(null);
-
-    setTimeout(AutoClicker, interval);
 }
 
 /** auto shower */

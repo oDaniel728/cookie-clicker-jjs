@@ -1,0 +1,17 @@
+{
+    "Console Log": {
+        "prefix": "#clog",
+        "body": "console.log($1);$0",
+        "scope": "javascript"
+    },
+    "Docstring": {
+        "prefix": "#doc",
+        "body": "/* $1 */ $0",
+        "scope": "javascript"
+    },
+    "JSDoc": {
+        "prefix": "#jsdoc",
+        "body": "/** $1 */ $0",
+        "scope": "javascript"
+    }
+}
